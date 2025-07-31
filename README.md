@@ -69,32 +69,6 @@ in logistics. It ensures:
 - SHAP
 
 
-📂 Project Structure
-===============================================================================
-
-.
-├── app.py                    # Streamlit app
-├── prediction_pipeline.py   # Inference logic
-├── schema.json              # Sample schema definition
-├── data.csv                 # Sample input data
-├── models/                  # Saved ML models
-├── README.txt               # This file
-
-
-🛠️ How to Run
-===============================================================================
-
-1. Clone the repository:
-   git clone https://github.com/your-username/genai-data-firewall.git
-   cd genai-data-firewall
-
-2. Install dependencies:
-   pip install -r requirements.txt
-
-3. Launch the Streamlit app:
-   streamlit run app.py
-
-
 📄 Inputs
 ===============================================================================
 
@@ -111,6 +85,7 @@ Example schema format:
     "min_estimate": 0,
     "max_estimate": 5000
   },
+  
   "Shipping_Mode": {
     "type": "categorical",
     "valid_values": ["Air", "Ground", "Ship"]
@@ -149,8 +124,10 @@ Once repaired, the data is passed through a trained ML model to generate predict
 
 Try it, fork it, break it:
 
-GitHub: https://github.com/your-username/genai-data-firewall  
+GitHub: https://github.com/ShubhiGupta15/GenAI-Powered-Data-Firewall-for-ML-Pipelines.git
+
 Streamlit App: [your-app-link-if-deployed]  
+
 Sample Files: `data.csv`, `schema.json`
 
 #GenAI #DataDrift #Streamlit #MachineLearning #MLOps #XGBoost #LLM #SHAP #SmartMiddleware #DataFirewall #PythonAI #OpenSourceAI
