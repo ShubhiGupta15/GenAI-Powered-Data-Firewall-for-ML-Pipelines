@@ -42,7 +42,7 @@ We faced this ourselves during production rollouts and wanted to build a tool th
 - 🔍 Schema Validator: Detect missing, extra, or mismatched columns
 - 🚨 Row-Level Checker: Spot missing values, out-of-range data, type mismatches
 - 🤖 GenAI Auto-Fix: Use an LLM to fix data based on context and schema rules
-- 🖼️ SHAP-Based Explanations: (Optional) Model transparency for predictions
+- 🖼️ SHAP-Based Explanations:Model transparency for predictions
 - 🖥️ Streamlit UI: Upload files, view violations, fix and download in seconds
 
 
