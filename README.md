@@ -126,7 +126,7 @@ Try it, fork it, break it:
 
 GitHub: https://github.com/ShubhiGupta15/GenAI-Powered-Data-Firewall-for-ML-Pipelines.git
 
-Streamlit App: [your-app-link-if-deployed]  
+Streamlit App: https://genai-powered-data-firewall-for-ml-pipelines-fbhdjrc3pcxpdvlka.streamlit.app/
 
 Sample Files: `data.csv`, `schema.json`
 
