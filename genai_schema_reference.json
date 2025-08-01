@@ -1,0 +1,337 @@
+{
+  "Type": {
+    "type": "categorical",
+    "valid_values": [
+      "DEBIT",
+      "PAYMENT",
+      "TRANSFER",
+      "CASH"
+    ]
+  },
+  "Days_for_shipping_(real)": {
+    "type": "numeric",
+    "mean": 3.48,
+    "std": 1.63,
+    "min_estimate": 0,
+    "max_estimate": 6
+  },
+  "Days_for_shipment_(scheduled)": {
+    "type": "numeric",
+    "mean": 2.92,
+    "std": 1.38,
+    "min_estimate": 0,
+    "max_estimate": 4
+  },
+  "Benefit_per_order": {
+    "type": "numeric",
+    "mean": 21.73,
+    "std": 106.74,
+    "min_estimate": -2351.25,
+    "max_estimate": 675.0
+  },
+  "Sales_per_customer": {
+    "type": "numeric",
+    "mean": 183.2,
+    "std": 120.05,
+    "min_estimate": 8.39,
+    "max_estimate": 1919.99
+  },
+  "Delivery_Status": {
+    "type": "categorical",
+    "valid_values": [
+      "Late delivery",
+      "Advance shipping",
+      "Shipping on time",
+      "Shipping canceled"
+    ]
+  },
+  "Late_delivery_risk": {
+    "type": "numeric",
+    "mean": 0.55,
+    "std": 0.5,
+    "min_estimate": 0,
+    "max_estimate": 1
+  },
+  "Category_Id": {
+    "type": "numeric",
+    "mean": 31.93,
+    "std": 15.66,
+    "min_estimate": 2,
+    "max_estimate": 76
+  },
+  "Category_Name": {
+    "type": "string"
+  },
+  "Customer_City": {
+    "type": "string"
+  },
+  "Customer_Country": {
+    "type": "categorical",
+    "valid_values": [
+      "Puerto Rico",
+      "EE. UU."
+    ]
+  },
+  "Customer_Email": {
+    "type": "categorical",
+    "valid_values": [
+      "XXXXXXXXX"
+    ]
+  },
+  "Customer_Fname": {
+    "type": "string"
+  },
+  "Customer_Id": {
+    "type": "numeric",
+    "mean": 6719.04,
+    "std": 4172.28,
+    "min_estimate": 3,
+    "max_estimate": 20747
+  },
+  "Customer_Lname": {
+    "type": "string"
+  },
+  "Customer_Password": {
+    "type": "categorical",
+    "valid_values": [
+      "XXXXXXXXX"
+    ]
+  },
+  "Customer_Segment": {
+    "type": "categorical",
+    "valid_values": [
+      "Corporate",
+      "Consumer",
+      "Home Office"
+    ]
+  },
+  "Customer_State": {
+    "type": "string"
+  },
+  "Customer_Street": {
+    "type": "string"
+  },
+  "Customer_Zipcode": {
+    "type": "numeric",
+    "mean": 35894.99,
+    "std": 37406.96,
+    "min_estimate": 603.0,
+    "max_estimate": 99205.0
+  },
+  "Department_Id": {
+    "type": "numeric",
+    "mean": 5.45,
+    "std": 1.63,
+    "min_estimate": 2,
+    "max_estimate": 12
+  },
+  "Department_Name": {
+    "type": "categorical",
+    "valid_values": [
+      "Footwear",
+      "Apparel",
+      "Golf",
+      "Fan Shop",
+      "Outdoors",
+      "Fitness",
+      "Discs Shop",
+      "Technology",
+      "Pet Shop",
+      "Book Shop",
+      "Health and Beauty"
+    ]
+  },
+  "Latitude": {
+    "type": "numeric",
+    "mean": 29.79,
+    "std": 9.79,
+    "min_estimate": 17.98,
+    "max_estimate": 48.78
+  },
+  "Longitude": {
+    "type": "numeric",
+    "mean": -84.97,
+    "std": 21.17,
+    "min_estimate": -158.03,
+    "max_estimate": 115.26
+  },
+  "Market": {
+    "type": "categorical",
+    "valid_values": [
+      "LATAM",
+      "USCA",
+      "Pacific Asia",
+      "Africa",
+      "Europe"
+    ]
+  },
+  "Order_City": {
+    "type": "string"
+  },
+  "Order_Country": {
+    "type": "string"
+  },
+  "Order_Customer_Id": {
+    "type": "numeric",
+    "mean": 6719.04,
+    "std": 4172.28,
+    "min_estimate": 3,
+    "max_estimate": 20747
+  },
+  "order_date_(DateOrders)": {
+    "type": "string"
+  },
+  "Order_Id": {
+    "type": "numeric",
+    "mean": 36390.62,
+    "std": 21033.41,
+    "min_estimate": 2,
+    "max_estimate": 77194
+  },
+  "Order_Item_Cardprod_Id": {
+    "type": "numeric",
+    "mean": 694.35,
+    "std": 336.57,
+    "min_estimate": 19,
+    "max_estimate": 1363
+  },
+  "Order_Item_Discount": {
+    "type": "numeric",
+    "mean": 20.8,
+    "std": 21.95,
+    "min_estimate": 0.0,
+    "max_estimate": 375.0
+  },
+  "Order_Item_Discount_Rate": {
+    "type": "numeric",
+    "mean": 0.1,
+    "std": 0.07,
+    "min_estimate": 0.0,
+    "max_estimate": 0.25
+  },
+  "Order_Item_Id": {
+    "type": "numeric",
+    "mean": 90675.9,
+    "std": 52073.09,
+    "min_estimate": 3,
+    "max_estimate": 180509
+  },
+  "Order_Item_Product_Price": {
+    "type": "numeric",
+    "mean": 141.23,
+    "std": 140.06,
+    "min_estimate": 10,
+    "max_estimate": 2000
+  },
+  "Order_Item_Profit_Ratio": {
+    "type": "numeric",
+    "mean": 0.12,
+    "std": 0.46,
+    "min_estimate": -2.75,
+    "max_estimate": 0.5
+  },
+  "Order_Item_Quantity": {
+    "type": "numeric",
+    "mean": 2.13,
+    "std": 1.46,
+    "min_estimate": 1,
+    "max_estimate": 5
+  },
+  "Sales": {
+    "type": "numeric",
+    "mean": 204.0,
+    "std": 132.71,
+    "min_estimate": 9.99,
+    "max_estimate": 1999.99
+  },
+  "Order_Item_Total": {
+    "type": "numeric",
+    "mean": 183.2,
+    "std": 120.05,
+    "min_estimate": 8.39,
+    "max_estimate": 1919.99
+  },
+  "Order_Profit_Per_Order": {
+    "type": "numeric",
+    "mean": 21.73,
+    "std": 106.74,
+    "min_estimate": -2351.25,
+    "max_estimate": 675.0
+  },
+  "Order_Region": {
+    "type": "string"
+  },
+  "Order_State": {
+    "type": "string"
+  },
+  "Order_Status": {
+    "type": "categorical",
+    "valid_values": [
+      "COMPLETE",
+      "ON_HOLD",
+      "PENDING_PAYMENT",
+      "PENDING",
+      "CLOSED",
+      "PROCESSING",
+      "CANCELED",
+      "SUSPECTED_FRAUD",
+      "PAYMENT_REVIEW"
+    ]
+  },
+  "Order_Zipcode": {
+    "type": "numeric",
+    "mean": 55194.42,
+    "std": 32018.08,
+    "min_estimate": 1453.0,
+    "max_estimate": 99301.0
+  },
+  "Product_Card_Id": {
+    "type": "numeric",
+    "mean": 694.35,
+    "std": 336.57,
+    "min_estimate": 19,
+    "max_estimate": 1363
+  },
+  "Product_Category_Id": {
+    "type": "numeric",
+    "mean": 31.93,
+    "std": 15.66,
+    "min_estimate": 2,
+    "max_estimate": 76
+  },
+  "Product_Image": {
+    "type": "string"
+  },
+  "Product_Name": {
+    "type": "string"
+  },
+  "Product_Price": {
+    "type": "numeric",
+    "mean": 141.22,
+    "std": 140.06,
+    "min_estimate": 9.99,
+    "max_estimate": 1999.99
+  },
+  "Product_Status": {
+    "type": "numeric",
+    "mean": 0.0,
+    "std": 0.0,
+    "min_estimate": 0,
+    "max_estimate": 0
+  },
+  "shipping_date_(DateOrders)": {
+    "type": "string"
+  },
+  "Shipping_Mode": {
+    "type": "categorical",
+    "valid_values": [
+      "First Class",
+      "Standard Class",
+      "Second Class",
+      "Same Day"
+    ]
+  }
+}
+
+
+
