@@ -9,36 +9,66 @@ from io import BytesIO
 from prediction_pipeline import predict_pipeline
 
 st.set_page_config(layout="wide")
+
 st.title("🧱 GenAI Data Firewall: Real-Time Drift Detection & Auto-Fix")
 
-# Sidebar with refined image and info
 st.sidebar.markdown(
     """
-    <div style="text-align: center; margin-bottom: 30px;">
+    <div style="text-align: center; margin-bottom: 40px;">
         <img 
             src="https://i.postimg.cc/yYwC3ymm/genai-firewall-huggingface-refined.png" 
-            width="200px" 
-            style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 8px;"/>
+            width="220px" 
+            style="
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                border-radius: 8px;
+                max-width: 100%;
+                height: auto;
+            "
+        />
     </div>
     """,
     unsafe_allow_html=True
 )
+st.sidebar.markdown("<h4 style='text-align: center;'>🤖 Behind the Scenes: Mistral LLM</h4>", unsafe_allow_html=True)
+st.sidebar.markdown("""
+Mistral-7B is a **powerful open-source language model** optimized for instruction-following.
+
+We use it to **auto-fix bad or missing data** based on schema rules:
+
+- Trained on diverse data  
+- Outputs JSON-friendly fixes  
+- CPU-compatible, fast, and reliable  
+
+💡 Let the GenAI handle noisy inputs while you focus on insights!
+""")
+
+# Cleaned-up "How It Works" panel
+st.sidebar.markdown("<h4 style='text-align: center;'>🤖 Inside the GenAI Firewall</h4>", unsafe_allow_html=True)
 
 st.sidebar.markdown("""
-### 🤖 Mistral-Powered GenAI Firewall
-Auto-fix schema violations using LLM magic:
-- JSON repair from bad input
-- Follows schema rules
-- Fast + CPU-compatible
+**1. Training Data**  
+`[{product_id: 'X120', warehouse: 'WH_22', holiday_week: 'Y', demand: 91, delivery_time: 35}, ...]`
+
+**2. Incoming Record**  
+`{product_id: 'X120', warehouse: 'WH_22', holiday_week: 'Y', demand: null, delivery_time: '?'}`
+
+**3. Detection**  
+🚨 Missing `demand`  
+🚨 Invalid `delivery_time`
+
+**4. GenAI Repair**  
+🔧 Prompt to LLM with schema + examples  
+✅ Fixed: `{demand: 92, delivery_time: 36}`
+
+**5. Model Prediction**  
+📈 `{expected_demand_next_week: 101.4, confidence: 0.89}`
 """)
 
 st.sidebar.markdown("""
-### ⚙️ How It Works
-1. Upload CSV + JSON Schema  
-2. Detect Schema Violations  
-3. GenAI Repairs via LLM  
-4. Run Predictions & Download Results
+**6. Logging**  
+📝 All inputs, fixes, and predictions are tracked for monitoring and analysis.
 """)
+
 
 # Upload files
 data_file = st.file_uploader("📄 Upload CSV data file", type="csv")
