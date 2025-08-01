@@ -1,0 +1,22 @@
+{
+  "Type": "int64",
+  "Days_for_shipment_(scheduled)": "int64",
+  "Benefit_per_order": "float64",
+  "Late_delivery_risk": "int64",
+  "Category_Name": "int64",
+  "Customer_Country": "int64",
+  "Customer_Segment": "int64",
+  "Customer_State": "int64",
+  "Customer_Zipcode": "float64",
+  "Department_Name": "int64",
+  "Order_Country": "int64",
+  "Order_Item_Id": "int64",
+  "Order_Item_Product_Price": "int64",
+  "Order_Item_Quantity": "int64",
+  "Sales": "float64",
+  "Order_State": "int64",
+  "Shipping_Mode": "int64",
+  "is_holiday_week": "int64",
+  "order_day": "int32",
+  "ship_month": "int32"
+}
